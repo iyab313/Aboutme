@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="wrap">
+                <div class="menu">
+                    <div class="nav-opn">
+                        <button type="button"><img src="images/menu.svg" alt="nav열기"></button>
+                     </div>
+                </div>
+                <nav>
+                    <div class="inner">
+                        <div class="nav-cls">
+                            <button type="button"><img src="images/close.svg" alt="nav닫기"></button>
+                        </div>
+                        <ul class="link">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">About Me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="content">
+			<div class="main">
+				<div class="wrap">
+					<a href="#" class="logo">
+						<h2>jeong</h2>
+						<p>webdesign potofolio</p>
+					</a>
+					<div class="info">
+						<h2>CSS, HTML, 그리고 JavaScript를 활용하여 웹 디자인 및 개발을 하는 디자이너입니다.</h2>
+						<p>창의적이고 사용자 중심의 디자인을 추구하며, 최신 트렌드와 기술에 대한 지속적인 학습을 통해 제작하는 작품들은 사용자 경험을 향상시키고자 노력합니다. 더 나은 웹 환경을 만들기 위해 끊임없이 연구하고 실험하며, 사용자들에게 가치 있는 경험을 전달하는 것을 목표로 삼고 있습니다.</p>
+					</div>
+					<ul class="contact">
+						<li>경상남도 김해시 구산동 거주</li>
+						<li>동의대학교 간호학과 졸업</li>
+						<li><a href="mailto:csu06167@naver.com">csu06167@naver.com</a></li>
+					</ul>
+					<a href="https://iyab313.github.io/RESUME/" class="about">POTOFOLIO</a>
+				</div>
+			</div>
+			
+
+
+			<div class="page">
+				<div class="section">
+                    <div class="info">
+                        <p>저는 웹디자인부터 코딩까지, 우수한 웹사이트를 디자인하고 구축하는 데 <span>열정</span>을 가지고 있습니다.
+                            <span>사용자 중심</span>의 디자인과 <span>최신 트렌드</span>를 반영해 결과물을 만들어내는 디자이너이자 개발자가 되겠습니다.
+                            끊임없이 공부하며 성실하게 쌓은 지식으로, 분야를 가리지 않고 회사에 실질적인 도움이 되고 싶습니다.
+                        </p>
+                    </div>
+                    <div class="about_me">
+                        <h1>About me</h1>
+                        <p>1999.04.06</p>
+                        <p>경상남도 김해시 거주</p>
+                        <p>010-5387-3136</p>
+                        <p>csu06167@naver.com</p>
+                    </div>
+                    <div class="record">
+                        <h1>Education</h1>
+                        <p>2022.02 - 동의대학교 간호학과 졸업</p>
+                        <p>2023.12 - 반응형 웹디자인 실무 양성과정 수강</p>
+                    </div>
+                    <div class="skills">
+                        <h1>SKILLS</h1>
+                        <ul>
+                            <li>
+                                <img src="images/html.png" alt="html">
+                                <h2>html</h2>
+                                <p>HTML 마크업에 능숙하여 다양한 프로젝트를 제작할 수 있습니다.</p>
+                            </li>
+                            <li>
+                                <img src="images/css.png" alt="css">
+                                <h2>css</h2>
+                                <p>다양한 스타일링 기술을 활용하여 웹 페이지를 꾸밀 수 있는 CSS에 능숙합니다.</p>
+                            </li>
+                            <li>
+                                <img src="images/javascript.png" alt="javascript">
+                                <h2>javascript</h2>
+                                <p>동적인 웹 페이지를 구축하기 위한 javascript를 다룰 수 있습니다.</p>
+                            </li>
+                            <li>
+                                <img src="images/jQuery.png" alt="jQuery">
+                                <h2>jQuery</h2>
+                                <p>jQuery를 활용하여 웹 페이지를 보다 동적이고 상호작용적으로 만들 수 있습니다.</p>
+                            </li>
+                            <li>
+                                <img src="images/photoshop.png" alt="photoshop">
+                                <h2>Photoshop</h2>
+                                <p>Photoshop을 다루어 이미지 편집 및 디자인 작업을 효과적으로 수행할 수 있습니다.</p>
+                            </li>
+                            <li>
+                                <img src="images/illustrator.png" alt="illustrator">
+                                <h2>illustrator</h2>
+                                <p>Illustrator를 다루어 벡터 기반의 그래픽 디자인을 창의적으로 수행할 수 있습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const opn = document.querySelector(".nav-opn");
+        const cls = document.querySelector(".nav-cls");
+        const nav = document.querySelector("nav");
+        opn.addEventListener("click", function() {
+            nav.style.left = 0;
+        });
+
+        cls.addEventListener("click", function() {
+            nav.style.left = "100%";
+        });
+
+
+        var swiper = new Swiper(".website", {
+            slidesPerView : 'auto',
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+        });
+    </script>
+
+</body>
+</html>
