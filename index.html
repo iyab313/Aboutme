@@ -121,18 +121,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const opn = document.querySelector(".nav-opn");
-        const cls = document.querySelector(".nav-cls");
-        const nav = document.querySelector("nav");
-        opn.addEventListener("click", function() {
-            nav.style.left = 0;
-        });
-
-        cls.addEventListener("click", function() {
-            nav.style.left = "100%";
-        });
-
-
         var swiper = new Swiper(".website", {
             slidesPerView : 'auto',
             scrollbar: {
